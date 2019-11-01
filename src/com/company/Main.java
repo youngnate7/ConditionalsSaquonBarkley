@@ -1,6 +1,19 @@
 package com.company;
+import java.awt.Color;
 
 public class Main {
+    public static double totalWages(double hours, double rate){
+        double wages;
+        double x;
+        x= hours-40;
+        if(hours>=40) {
+            wages = 40 * rate + 1.5* rate * x;
+        }
+        else {
+            wages = hours * rate;
+        }
+        return wages;
+    }
 
     public static void main(String[] args) {
         double wages = totalWages(45, 12.5);
